@@ -344,7 +344,7 @@ body.mobile-menu-open:before{content:"";position:fixed;inset:0;z-index:49;backgr
 
   .home-cta-section{width:calc(100% - 36px);padding:0 0 65px}
   .home-cta-section .cta-band{position:relative;display:flex;flex-direction:column;align-items:stretch;gap:13px;padding:27px 21px;border:1px solid rgba(255,255,255,.16);border-radius:11px;background:linear-gradient(135deg,#ff8b4e,#f05d24);overflow:hidden}
-  .home-cta-section .cta-band:after{content:"B";position:absolute;left:5px;top:-37px;color:rgba(15,18,20,.09);font-size:180px;font-weight:900;line-height:1;pointer-events:none}
+  .home-cta-section .cta-band:after{content:"ب";position:absolute;left:5px;top:-37px;color:rgba(15,18,20,.09);font-size:180px;font-weight:900;line-height:1;pointer-events:none}
   .home-cta-section .cta-band>div,.home-cta-section .cta-band>.btn{position:relative;z-index:1}
   .home-cta-section .cta-band h2{font-size:24px;line-height:1.5;margin:0 0 5px}
   .home-cta-section .cta-band p{font-size:11px;line-height:1.9;margin:0;color:#321b11}
