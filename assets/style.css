@@ -21,3 +21,22 @@
 .process-grid{grid-template-columns:repeat(4,minmax(0,1fr))}
 @media(max-width:950px){.service-showcase{grid-template-columns:1fr 1fr}.service-showcase .service-card:first-child{grid-column:span 2}.service-showcase .service-card{min-height:330px}.process-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:600px){.service-showcase{grid-template-columns:1fr;gap:14px}.service-showcase .service-card:first-child{grid-column:auto}.service-showcase .service-card{min-height:330px;padding:24px}.service-showcase .service-card .num{margin-top:45px}.process-grid{grid-template-columns:1fr}}
+
+
+/* RTL mobile header: hamburger must always be on the right */
+@media(max-width:900px){
+.header .nav{direction:rtl;display:flex;justify-content:flex-start;align-items:center;gap:12px}
+.header .nav>.hamb{order:-1;flex:0 0 44px;margin:0!important;display:grid;place-items:center}
+.header .nav>.brand{order:0;margin:0!important;flex:0 1 auto;min-width:0}
+.header .nav>.mobile-quote{display:inline-flex!important;order:1;margin-right:auto;flex:0 0 auto;font-size:12px;padding:10px 12px}
+.header .nav>.nav-cta{display:none!important}
+.header .nav>.navlinks{display:none!important}
+}
+@media(max-width:480px){
+.header .nav{gap:9px}
+.header .nav>.hamb{flex-basis:40px;width:40px;height:40px}
+.header .nav>.brand .brand-mark{width:34px;height:34px;font-size:19px}
+.header .nav>.brand strong{font-size:14px;letter-spacing:1px}
+.header .nav>.brand small{font-size:7px;letter-spacing:1px}
+.header .nav>.mobile-quote{font-size:10px;padding:9px 8px;white-space:nowrap}
+}
