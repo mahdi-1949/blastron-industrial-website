@@ -255,3 +255,113 @@ body.mobile-menu-open:before{content:"";position:fixed;inset:0;z-index:49;backgr
 .footer-grid>div:nth-child(2)>a,.footer-grid>div:nth-child(3)>a{font-size:9px}
 .footer-grid>div:first-child{padding:18px 15px}
 }
+
+
+/* BLASTRON HOME — dedicated mobile art direction */
+@media(max-width:600px){
+  .topline{display:none}
+  .home-hero{min-height:0;min-height:calc(100svh - 72px);display:flex;align-items:center;background-position:61% center}
+  .home-hero:before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(7,11,14,.28) 0%,rgba(7,11,14,.72) 42%,#090d10 100%);pointer-events:none}
+  .home-hero:after{height:85px;z-index:1}
+  .home-hero>.container{position:relative;z-index:2;width:calc(100% - 38px);max-width:460px}
+  .home-hero .hero-content{padding:66px 0 48px;max-width:100%}
+  .home-hero .hero-kicker{display:inline-flex;align-items:center;gap:8px;margin-bottom:5px;padding:7px 10px;border:1px solid rgba(255,133,77,.35);border-radius:3px;background:rgba(11,16,20,.52);color:#ffad82;font-size:9px;letter-spacing:1px;line-height:1.5}
+  .home-hero .hero-kicker:before{content:"";width:6px;height:6px;flex:0 0 6px;border-radius:50%;background:var(--orange);box-shadow:0 0 12px #ff6b2c}
+  .home-hero h1{font-size:clamp(39px,10.4vw,48px);line-height:1.36;letter-spacing:-1.2px;margin:17px 0 13px;max-width:440px}
+  .home-hero h1 em{display:inline-block;color:#ff824b;text-shadow:0 4px 24px #ff6b2c28}
+  .home-hero .hero-content>p{max-width:410px;margin:0;color:#c4cdd2;font-size:13px;line-height:2.15}
+  .home-hero .hero-actions{display:grid;grid-template-columns:1fr 1fr;gap:9px;margin-top:23px}
+  .home-hero .hero-actions .btn{min-height:48px;padding:10px 9px;font-size:11px;line-height:1.7;border-radius:5px}
+  .home-hero .hero-actions .btn:first-child{box-shadow:0 8px 22px #ff6b2c24}
+  .home-hero .hero-actions .btn-outline{background:rgba(13,19,23,.72);border-color:#77838b;color:#f3f5f6}
+  .home-hero .hero-meta{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px;margin-top:27px;padding-top:14px;border-top:1px solid rgba(255,255,255,.13)}
+  .home-hero .hero-meta>div{min-width:0;padding:8px 7px;border:1px solid rgba(255,255,255,.08);border-radius:6px;background:rgba(13,19,23,.55)}
+  .home-hero .hero-meta strong{display:block;color:#ff955f;font-size:19px;line-height:1.3}
+  .home-hero .hero-meta small{display:block;margin-top:4px;color:#c2cbd0;font-size:8px;line-height:1.65}
+  .home-hero .hero-scroll{display:none!important}
+
+  .home-services{padding:67px 0 62px;background:linear-gradient(180deg,#0d1216,#10161b)}
+  .home-services .container,.home-projects .container,.home-process .container{width:calc(100% - 36px)}
+  .home-services .section-head,.home-projects .section-head,.home-process .section-head{display:flex;flex-direction:column;align-items:flex-start;gap:9px;margin-bottom:24px}
+  .home-services .section-head h2,.home-projects .section-head h2,.home-process .section-head h2{font-size:27px;line-height:1.55;margin:7px 0 0}
+  .home-services .section-head p,.home-projects .section-head p,.home-process .section-head p{margin:0;max-width:100%;font-size:11px;line-height:2;color:#9daab2}
+  .home-services .eyebrow,.home-projects .eyebrow,.home-process .eyebrow{font-size:9px;letter-spacing:1.7px}
+  .home-services .service-showcase{display:flex;gap:12px;width:100%;margin:0;padding:2px 1px 15px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:1px;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain}
+  .home-services .service-showcase::-webkit-scrollbar,.home-projects .project-grid::-webkit-scrollbar{display:none}
+  .home-services .service-showcase{scrollbar-width:none}
+  .home-services .service-card{position:relative;display:flex;flex:0 0 84%;flex-direction:column;justify-content:flex-end;min-width:0;min-height:365px;padding:23px 21px;border-radius:9px;scroll-snap-align:start;isolation:isolate}
+  .home-services .service-card:before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,rgba(5,9,12,.06) 5%,rgba(5,9,12,.28) 38%,rgba(5,9,12,.97) 100%)}
+  .home-services .service-card .service-icon{position:absolute;top:20px;right:20px;width:43px;height:43px;border-radius:8px;background:rgba(8,13,17,.68);backdrop-filter:blur(8px);font-size:19px}
+  .home-services .service-card .num{margin:0 0 8px;font-size:9px;letter-spacing:1.3px}
+  .home-services .service-card h3{font-size:22px;margin:0 0 7px;line-height:1.5}
+  .home-services .service-card p{max-width:100%;font-size:11px;line-height:2;color:#c2cbd0;margin:0 0 18px}
+  .home-services .service-card .arrow{position:absolute;left:19px;bottom:20px;display:grid;place-items:center;width:35px;height:35px;border:1px solid #ff8c56;border-radius:50%;font-size:18px}
+  .home-services .container:after{content:"برای مشاهده خدمات بیشتر، افقی ورق بزنید  ←";display:block;margin-top:2px;color:#77858e;font-size:9px;text-align:left}
+
+  .home-why{padding:68px 0;background:radial-gradient(ellipse at 10% 30%,rgba(255,107,44,.08),transparent 42%),#101519!important}
+  .home-why .container.split{display:flex;flex-direction:column;align-items:stretch;gap:23px;width:calc(100% - 36px)}
+  .home-why .copy{order:0}
+  .home-why .copy .eyebrow{font-size:9px;letter-spacing:1.6px}
+  .home-why .copy h2{font-size:27px;line-height:1.55;margin:8px 0 10px}
+  .home-why .copy p{font-size:12px;line-height:2.15;margin:0;color:#aeb9c0}
+  .home-why .ticks{grid-template-columns:1fr 1fr;gap:8px;margin:19px 0}
+  .home-why .ticks span{display:flex;align-items:center;min-height:42px;padding:8px 9px;border:1px solid rgba(255,255,255,.09);border-radius:6px;background:#ffffff06;color:#d3dadd;font-size:10px;line-height:1.7}
+  .home-why .ticks span:before{margin-left:6px;flex:0 0 auto}
+  .home-why .copy>.btn{width:100%;min-height:46px;justify-content:center;font-size:11px}
+  .home-why .image-stack{order:1;width:100%;padding:0 0 25px 25px}
+  .home-why .image-stack img{height:270px;border-radius:8px;object-fit:cover}
+  .home-why .image-tag{bottom:0;left:0;padding:11px 13px;border-radius:3px;font-size:9px}
+
+  .home-stats{padding:17px 0;background:#0b1014;border-block:1px solid rgba(255,255,255,.08)}
+  .home-stats .container{width:calc(100% - 36px)}
+  .home-stats .stats-row{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+  .home-stats .stat{display:flex;align-items:center;gap:12px;min-width:0;padding:12px 11px;border:1px solid rgba(255,255,255,.08);border-radius:7px;background:#141b20}
+  .home-stats .stat strong{flex:0 0 auto;font-size:25px;line-height:1.2;color:var(--orange)}
+  .home-stats .stat small{font-size:9px;line-height:1.7;color:#b7c1c7}
+
+  .home-projects{padding:67px 0 62px;background:#0c1115}
+  .home-projects .section-head{position:relative}
+  .home-projects .section-head>.btn{align-self:stretch;min-height:42px;margin-top:5px;font-size:10px}
+  .home-projects .project-grid{display:flex;gap:12px;width:100%;margin:0;padding:2px 1px 15px;overflow-x:auto;overflow-y:hidden;scroll-snap-type:x mandatory;scroll-padding-inline:1px;-webkit-overflow-scrolling:touch;overscroll-behavior-inline:contain;scrollbar-width:none}
+  .home-projects .project{flex:0 0 86%;height:320px;min-width:0;border-radius:8px;scroll-snap-align:start}
+  .home-projects .project img{filter:brightness(.78)}
+  .home-projects .project-info{padding:19px}
+  .home-projects .project-info small{font-size:9px;letter-spacing:1.4px}
+  .home-projects .project-info h3{max-width:260px;font-size:17px;line-height:1.6}
+  .home-projects .container:after{content:"گالری پروژه‌ها را ورق بزنید  ←";display:block;color:#77858e;font-size:9px;text-align:left}
+
+  .home-process{padding:65px 0 70px;background:#11171c!important}
+  .home-process .section-head{margin-bottom:22px}
+  .home-process .section-head p{max-width:340px}
+  .home-process .process-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+  .home-process .process-step{position:relative;min-width:0;min-height:153px;padding:17px 13px;border:1px solid rgba(255,255,255,.09);border-radius:8px;background:linear-gradient(145deg,#1a232a,#11171c)}
+  .home-process .process-step>b{display:grid;place-items:center;width:31px;height:31px;margin-bottom:13px;border:1px solid #ff6b2c70;border-radius:7px;color:#ff9b6a;font-size:11px}
+  .home-process .process-step h3{margin:0 0 6px;font-size:13px;line-height:1.6}
+  .home-process .process-step p{margin:0;color:#9eabb3;font-size:10px;line-height:1.9}
+  .home-process .process-step:after{content:"";position:absolute;top:17px;left:13px;width:20px;height:1px;background:linear-gradient(90deg,var(--orange),transparent)}
+  .home-process .container>div[style*="margin-top"]{margin-top:18px!important}
+  .home-process .container>div[style*="margin-top"] .btn{display:flex;width:100%;min-height:45px;justify-content:center;font-size:10px}
+
+  .home-cta-section{width:calc(100% - 36px);padding:0 0 65px}
+  .home-cta-section .cta-band{position:relative;display:flex;flex-direction:column;align-items:stretch;gap:13px;padding:27px 21px;border:1px solid rgba(255,255,255,.16);border-radius:11px;background:linear-gradient(135deg,#ff8b4e,#f05d24);overflow:hidden}
+  .home-cta-section .cta-band:after{content:"B";position:absolute;left:5px;top:-37px;color:rgba(15,18,20,.09);font-size:180px;font-weight:900;line-height:1;pointer-events:none}
+  .home-cta-section .cta-band>div,.home-cta-section .cta-band>.btn{position:relative;z-index:1}
+  .home-cta-section .cta-band h2{font-size:24px;line-height:1.5;margin:0 0 5px}
+  .home-cta-section .cta-band p{font-size:11px;line-height:1.9;margin:0;color:#321b11}
+  .home-cta-section .cta-band>.btn{display:flex;align-items:center;justify-content:space-between;min-height:47px;margin-top:4px;padding:10px 14px;border-radius:6px;font-size:11px}
+}
+@media(max-width:380px){
+  .home-hero .hero-content{padding-top:56px;padding-bottom:40px}
+  .home-hero h1{font-size:37px}
+  .home-hero .hero-actions{grid-template-columns:1fr}
+  .home-hero .hero-meta{gap:5px}
+  .home-hero .hero-meta>div{padding:7px 5px}
+  .home-hero .hero-meta small{font-size:7px}
+  .home-services .service-card{flex-basis:88%;min-height:345px}
+  .home-projects .project{flex-basis:89%;height:295px}
+  .home-process .process-grid{gap:7px}
+  .home-process .process-step{padding:14px 10px;min-height:158px}
+}
+@media(prefers-reduced-motion:reduce){
+  .home-services .service-card,.home-projects .project img{transition:none!important}
+}
