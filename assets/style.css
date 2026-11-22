@@ -221,7 +221,7 @@ body.mobile-menu-open:before{content:"";position:fixed;inset:0;z-index:49;backgr
 /* Bespoke mobile footer */
 @media(max-width:600px){
 .footer{position:relative;isolation:isolate;overflow:hidden;padding:52px 0 20px;background:radial-gradient(ellipse at 90% 0%,rgba(255,107,44,.13),transparent 36%),linear-gradient(180deg,#10161b 0%,#080b0e 72%)}
-.footer:before{content:"BLASTRON";position:absolute;z-index:-1;top:18px;left:-20px;color:rgba(255,255,255,.025);font-size:clamp(62px,17vw,100px);font-weight:900;letter-spacing:3px;line-height:1;direction:ltr}
+.footer:before{content:"بلاسترون";position:absolute;z-index:-1;top:18px;left:-20px;color:rgba(255,255,255,.025);font-size:clamp(62px,17vw,100px);font-weight:900;letter-spacing:3px;line-height:1;direction:ltr}
 .footer:after{content:"";position:absolute;top:0;right:18px;left:18px;height:2px;background:linear-gradient(90deg,transparent,var(--orange),transparent)}
 .footer .container{width:calc(100% - 32px)}
 .footer-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
